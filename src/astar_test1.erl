@@ -1,6 +1,6 @@
--module(astar_test).
+-module(astar_test1).
 
--behaviour(astar_behaviour).
+-behaviour(astar_behaviour_1).
 
 -export([
     get_max_width_height/0,
@@ -22,4 +22,4 @@ noway_fun({6,4}) -> false;
 noway_fun({7,4}) -> false;
 noway_fun({_,_}) -> true.
 
-test({X,Y}, {X1,Y1}) -> astar_behaviour:astar({X,Y}, {X1,Y1}, ?MODULE).
+test({X,Y}, {X1,Y1}) -> astar_behaviour_1:astar({X,Y}, {X1,Y1}, ?MODULE).
